@@ -1,0 +1,5 @@
+Options -Indexes
+Options +FollowSymLinks
+
+ErrorDocument 404 /
+ErrorDocument 403 /

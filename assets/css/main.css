@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'sf-ui-display-bold';
+    src: url('/assets/fonts/SF-UI-Display-Bold.ttf');
+}
+@font-face {
+    font-family: 'sf-ui-display-light';
+    src: url('/assets/fonts/SF-UI-Display-Light.ttf');
+}
+@font-face {
+    font-family: 'sf-ui-display-medium';
+    src: url('/assets/fonts/SF-UI-Display-Medium.ttf');
+}
+@font-face {
+    font-family: 'sf-ui-display-regular';
+    src: url('/assets/fonts/SF-UI-Display-Regular.ttf');
+}
+
+*:not(body), *:not(body)::before, *:not(body)::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+}
+
+* {
+    font-family: sf-ui-display-regular, sans-serif;
+    font-size: 1em;
+}
+
+body, html {
+    height:100%
+}
+
+ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+    background: #F0F0F0 url('/assets/img/squama_bg.jpg') repeat;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+aside, main {
+    padding: 16px;
+    display: inline-block;
+}
+aside {
+    width: 346px;
+    border-right: 1px solid #E7E7E7;
+}
+main {
+    width: 675px;
+}
+
+.favorite, .wellcome {
+    color: #ADADAD;
+}
+.favorite.active {
+    color: #F3BD3D;
+}
+.wellcome {
+    text-align: center;
+    margin-top: 20%;
+}
+#header .favorite:hover {
+    color: #C8C6C6;
+}
+input[type="text"] {
+    border: none;
+    padding: 8px;
+    border-radius: 3px;
+    box-shadow: 0 0 7px 1px #EDE9E9;
+    font-family: sf-ui-display-regular;
+    font-size: .85em;
+    width: 100%;
+}
+
+.btn {
+    border: none;
+    background: #FFF;
+    background-color: rgb(255, 255, 255);
+    padding: 4px 11px;
+    height: 34px;
+    font-size: 1em;
+    color: #FFF;
+    cursor: pointer;
+}
+.btn-telegram {
+    background-color: #29A5DC;
+}
+.btn-telegram:hover {
+    background-color: #268CB9;
+}
+
+.form-element {
+    display: inline-block;
+    margin-left: 20px;
+    width: 90%;
+    white-space: nowrap;
+}
+.form-element input[type="text"] + button {
+    margin-left: -7px;
+    border-radius: 0 3px 3px 0;
+}
+
+#wrapper {
+    width: 1040px;
+    height: 100%;
+    background: #FFF;
+    margin: 0 auto;
+    box-shadow: 0px 0px 30px 0px rgba(51,51,51,.3);
+    border-left: 1px solid #E8E8E8;
+    border-right: 1px solid #E8E8E8;
+}
+
+#header {
+    height: 68px;
+    background-color: #EDEDEE;
+    border-bottom: 1px solid #E7E7E7;
+}
+#header .logo {
+    font-family: sf-ui-display-light;
+    color: #ADADAD;
+    font-size: .85em;
+}
+#header .logo img {
+    width: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+#header .logo strong {
+    font-family: sf-ui-display-medium;
+}
+
+#content {
+    height: calc(100% - 68px);
+}
+
+.user-list {
+    height: calc(100% - 2px);
+    padding: 0;
+    vertical-align: top;
+    overflow: auto;
+}
+
+.user-list li {
+    padding: 9px 16px;
+    cursor: pointer;
+}
+.user-list li:hover, .user-list li.active {
+    background: #EDEDEE;
+}
+.user-list li .header {
+    margin: 5px 0;
+}
+.user-list li .container {
+    display: inline-block;
+    width: 75%;
+    vertical-align: top;
+}
+.user-list li strong {
+    color: #124E72;
+    font-family: sf-ui-display-light;
+    font-size: .9em;
+}
+.user-list .favorite {
+    margin-left: 15px;
+}
+.date, .user-list li .message {
+    font-size: .8em;
+    color: #ADADAD;
+    font-family: sf-ui-display-medium;
+}
+.date {
+    float: right;
+}
+
+.new-message {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #FF7F7F;
+    float: right;
+    border-radius: 50%;
+    margin-top: 4px;
+}
+
+.chat-frame {
+    width: 704px;
+    margin-top: -16px;
+    margin-right: -16px;
+}
+#chat-content {
+    min-height: 100px;
+    overflow: auto;
+    padding-right: 20px;
+    padding-top: 16px;
+}
+
+.avatar {
+    display: inline-block;
+    width: 50px;
+    background: #E8E8E8;
+    margin-right: 13px;
+    height: 50px;
+    border-radius: 50%;
+}
+.avatar > img {
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid #E8E8E8;
+}
+
+.messages-list li {
+    margin-bottom: 10px;
+}
+.messages-list p {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    line-height: 22px;
+    width: 78%;
+    color: #4D4D4D;
+    font-size: .9em;
+    margin-top: 8px;
+}
+.messages-list .avatar {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+.messages-list .avatar > img {
+    width: 40px;
+    height: 40px;
+}
