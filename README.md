@@ -1,4 +1,4 @@
-Technical Support Boat
+Technical Support Bot
 ===============
 This script is an example of technical implementation of technical support via bot telegrams. Web interfacing allows to receive and respond to user messages sent to the telegram by a bot.
 
